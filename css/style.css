@@ -1,0 +1,105 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+.custom-container{
+    background: #2e6da4;
+}
+.custom-nav{
+    background-color: #ffffff;
+}
+.navbar-default .navbar-brand{
+    color:#3681c1;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #3681c1;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #FFFFFF;
+    color: #777;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+    background-color: transparent;
+}
+.main-header{
+    margin-top: 6em;
+    margin-bottom: 2em;
+    background: transparent;
+}
+.main-header h1, h4{
+    padding-left: 0px;
+    color:#FFFFFF;
+    text-align: center;
+}
+.main-body {
+    padding-top: 3em;
+    margin-bottom: 3em;
+    margin-top: 1.5em;
+    background: white;
+
+}
+
+.style-page {
+    font-size: 14.5pt;
+}
+.style-page p{
+    margin-bottom: 2em;
+}
+.style-page h2{
+    margin-top: 2px;
+    margin-bottom: 1em;
+}
+.style-page article{
+    margin-bottom: 75px;
+}
+
+.style-resume{
+    font-size: 12.5pt;
+}
+.style-resume article{
+    margin-bottom: 1em;
+}
+.style-resume article h3{
+    margin-top: 2px;
+}
+.style-resume b {
+    color: #2AABD2;
+}
+
+.style-resume h4 {
+    color: #080808;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.style-resume small {
+    color: #2AABD2;
+    font-size: 11pt;
+}
+
+.style-resume ul {
+    margin-bottom: 1.5em;
+}
+.style-rw-1{
+    font-size: 14pt;
+}
+
+.active{
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:#337ab7;
+    border-right: #337ab7 solid;
+}
+.social-media{
+    padding-top: 0px important!;
+    text-align: center;
+}
+
+
+.network{
+
+}

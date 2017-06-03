@@ -1,0 +1,5 @@
+name: alvaro ching, portfolio
+markdown: kramdown
+
+
+permalink: /:year/:month/:day/:title

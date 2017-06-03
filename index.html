@@ -1,0 +1,62 @@
+---
+layout: default
+title: Home
+---
+<div class="col-md-9 style-page">
+    <article>
+        <h2>Welcome</h2>
+        <p>
+            In this e-portfolio you will find a collection of artifacts from different projects that I have worked on, such as internships and freelance projects. I appreciate the interest you have taken in this project. I hope you will gain a snapshot of the skills I have acquired.
+        </p>
+    </article>
+    <article>
+        <h2>About me</h2>
+        <p> I’m a recently completed my Master degree in Computer Information Systems with concentration in
+            Web Application Development at Boston University through out the program i was able acquiring new skills that will help me improve both professionally and personally.
+            Previously I held an internship with the City of Cudahy as a Webmaster assistant and Disney Consumer Products IT and worked as a Document Imaging Specialist at American Microimaging Inc (AMI). &nbsp; Besides completing my master degree, I’m an avid volleyball and soccer fan I also like to take programming courses through coursera,
+            code academy and udacity to keep learning new languages and staying up to date with the new trends</p>
+    </article>
+    <article>
+        <h2>Blog</h2>
+        <ul>
+            {%for post in site.posts%}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%d %B %Y" }}
+                </li>
+            {%endfor%}
+        </ul>
+
+    </article>
+    <article>
+        <div class="network">
+            <h2>Let's Network</h2>
+            <div class="row social-media">
+                <div class="col-md-3">
+                     <a href="http://www.google.com/recaptcha/mailhide/d?k=01LdCKq_S80xwcb6BpISwBkw==&amp;c=l8Gbc79sozvsRvPjQ_pGQ677IQSMbp4bzTBi8UseRWw=" target="_blank">
+                         <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                     </a>
+                     <p>Message me</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://twitter.com/jinto12" target="_blank">
+                        <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                    </a>
+                    <p>Follow me</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.linkedin.com/in/gnich12/" target="_blank">
+                        <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                    </a>
+                    <p>Join my network</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://github.com/gnich12" target="_blank">
+                        <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                    </a>
+                    <p>Code Repository</p>
+                </div>
+            </div>
+
+        </div>
+    </article>
+</div>

@@ -1,0 +1,142 @@
+---
+layout: default
+title: SFpoultry
+---
+
+<div class="col-md-9 style-page">
+    <section>
+        <h1>Wing On Poultry Inc.</h1>
+        <h3>Freelance</h3>
+        <h4>December 2010 to February 2011 </h4>
+    </section>
+    <section>
+        <h2>Skills</h2>
+        <p>
+            HTML Javascript (Jquery libraries) CSS (open source css framework YAML) PHP
+        </p>
+    </section>
+    <section>
+        <h2>Description</h2>
+        <p>
+            Wing on Poultry Inc., is a poultry store that is located in San Francisco i was contracted to build their small business website to promote their products. The small business website consisted of three webapges a home page, a product and a contact page. I developed this project using Html, an open source CSS framework to speed up the layout design, Jquery to add up some interactivity,  php to create the contact page and to manipulate image i used open souce tools such as Inkscape and Gimp. This project lasted three months from December 2010 to February 2011. you can visit the website at <a href="http://www.wingonsfpoultry.com">http://www.wingonsfpoultry.com</a>
+        </p>
+    </section>
+    <section>
+        <h2>Development</h2>
+        <p>
+            For this project, i was debating on which layout to choose, one column or two column, since the website probably won't have that much content, and it would be a problem leaving that many whites spaces which will not be that much appealing to the visitors. At the end, I decided to go for the two column layout since it would give me the balance with content and white spaces.
+        </p>
+        <p>
+            Here is a demo of the layout that i choose for the website
+
+        </p>
+        <img src="image/layout_demo_1.jpg" class="img-responsive" alt="layout_demo_1"/>
+        <br>
+        <p class="bg-danger">
+            <b>Update:</b>&nbsp; the picture demo above was the first version of this website. Last year i updated the layout of the website and i decided to use
+            one column and distribute all the content. you can see it by clicking on the link i provided above.
+        </p>
+        <p>
+            In order to speed up the development of this layout, i used a open source framework called YAML, because it offers me the flexibility to build a consistent layout, and its compatible with many common used browsers.
+            <br>
+            <br>
+            here is a snipet of a CSS look using  YAML
+            <pre>
+
+                /**
+                * Design of Additional Layout Elements | Gestaltung weiterer Layoutelemente
+                *
+                * @section layout-misc
+                */
+                /** Business hours class **/
+                div.hours{
+
+                    font-size:14px;
+                    border:thin solid #B00;
+                    clear:both;
+                }
+                div.hours h3{
+
+                    text-align:center;
+                    background-color:#A00;
+                    color:white;
+                    font-weight:bold;
+
+                }
+                div.hours span{
+                    background-color:#A00;
+                    color:white;
+                }
+                div.hours p{
+                    padding-left:10px;
+                    padding-top:10px;
+                    font-weight:bold;
+                }
+                /** -------------------- **/
+            </pre>
+
+
+            <p>
+                Following the requirements for this website, it will contain three webpages  which are:
+            </p>
+            <ul>
+                <li>
+                    Home - a introduction to the store and business hours
+                </li>
+                <li>
+                    Products - a list of all their products available to the public
+                </li>
+                <li>
+                    Contact - contains a form to contact the store and a map with the directions.
+                </li>
+            </ul>
+
+            <p>
+                For the product page i added a little bit of interactivity to list of products in which once you place the cursor over the product it will display the information about it. As you can see in the figure below, it will display the text if the cursor is on top of the item.
+            </p>
+            <p>
+                i used jquery to perform this little animation and here is the code:</p>
+                <pre>
+                    $(".description, .noshow").hover(function(event){$(this).removeClass('noshow').addClass('show')},
+                    function(){$(this).addClass('noshow').removeClass('show');}
+                    );
+                </pre>
+
+                <p>
+                    Finally for the last webpage, i use PHP to create the contact form so it sends the message directly to the store owner below you can see a snipet of the code:</p>
+                    <pre>
+
+                        if (isset($_REQUEST['email']))
+                        {//if "email" is filled out, proceed
+
+                        //check if the email address is invalid
+                        $mailcheck = spamcheck($_REQUEST['email']);
+                        if ($mailcheck==FALSE)
+                        {
+                            echo "";
+                        }
+                        else
+                        {//send email
+                            $to='123456@gmail.com';
+                            $email = $_REQUEST['email'] ;
+                            $subject = 'Comments from ' . $_REQUEST['name'] ;
+                            $comments = $_REQUEST['comments'] ;
+                            mail($to, $subject, $comments, 'From:'. $email );
+                            echo "&lt;h3&gt;Thank you for your comments. We will get back to you as soon as possible&lt;/h3&gt;";
+                        }
+                    }
+                    else
+                </pre>
+                <!--</p>-->
+                <p class="bg-danger">
+                    <b>Update:&nbsp;</b>as per request of the owner, i took out the form and just provided the e-mail address for contacts
+                </p>
+                <p>
+                    As for the banners on the webpages i took pictures of the front of the store, products and a picture of the store to make the banners. I used open source Inkscape and Gimp here is the home banner.
+                </p>
+                <img src="image/home_banner.JPG" class="img-responsive" alt="home_banner">
+                <p>
+                    to see the live website please to go to <a href="http://www.wingonsfpoultry.com">http://www.wingonsfpoultry.com</a>
+                </p>
+            </section>
+        </div>

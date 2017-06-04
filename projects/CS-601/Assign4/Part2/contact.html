@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <meta charset="utf-8">
+          <title>Assignment 4 - form validator</title>
+           <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen"/>
+           <!--<link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>-->
+    </head>
+    <body>
+        <div class="container-header">
+            <header class="container">
+            <div class="main-header">
+                <h1>Part 2 </h1>
+                <h4>Assignment 4 - Form validator using javascript</h4>
+            </div>
+        </header>
+        </div>
+         <!--<div class="containter-nav">
+            <nav class="container nav-bar">
+            <ul>
+                  <li ><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Biography</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+           
+        </nav>
+        </div>-->
+        <div class="container main-form" >
+            <h1>Contact Form</h1>
+            <div id="notValid"></div>
+            <form action="#" method="post" name="partTwo" onsubmit="return chckForm(partTwo);">
+                <fieldset><legend>Student Info</legend>
+                    <label>First Name</label><label id="fName"></label><input type="text" name="firstName" id="firstName" />
+            <label>Last Name</label><label id="lName"></label><input type="text" name="lastName" id="lastName" />
+            <label>UserName</label><label id="uName"></label><input type="text" name="userName" id="userName" />
+            <label>E-mail</label><label id="mail"></label><input type="text" name="email" id="email" />
+                </fieldset>
+            
+            <input type="submit" class="btn-style" value="Submit">
+        </form>
+        </div>
+        
+        <footer class="container footer">
+            <p>Assignment 4- Alvaro Ching</p>
+        </footer>
+         <script src="formValidator.js" type="text/javascript"></script>
+    </body>
+</html>

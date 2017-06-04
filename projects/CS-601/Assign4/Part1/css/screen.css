@@ -1,0 +1,211 @@
+@import url(http://fonts.googleapis.com/css?family=Cuprum);
+
+html{
+    position:relative;
+}
+
+body{
+    margin:0;
+    font-family: 'Cuprum', sans-serif,arial,verdana;
+    font-size:12.5pt;
+    background:url(image_bg.png);
+}
+
+header,hgroup,section,footer,nav,aside{
+    display:block;
+    margin:0;
+}
+
+.container{
+    width:960px;
+    margin: 0 auto;
+    display:block;
+}
+
+.container-header{
+    background:url(Black_texture_04-22.jpg) fixed center no-repeat #000000;
+    display:block;
+    margin-top:-1.5em;
+    height:100px;
+
+}
+
+.main-header{
+    color:white;
+}
+
+.main-header h1{
+    padding-top: 0.5em;
+    margin-bottom: 0.3em;
+    display:block;
+    text-shadow:2px 2px gray;
+}
+.main-header h4{
+    margin-top:0.2em;
+    text-shadow:2px 2px gray;
+}
+
+.containter-nav{
+    background: #ff3b00 center repeat url(Striped_Orange_by_Maandersen.jpg);
+    opacity:.8;
+    display:block;
+    margin-top:-0.1em;
+    height: 77px;
+    box-shadow: 0px 0px 15px black;
+    width:100%
+}
+.active{
+    background:#FFFFFF;
+}
+.nav-bar a{
+    text-decoration: none;
+    color:#140d00;
+    font-size:16pt;
+    margin-top:1em;
+    display: block;
+}
+.nav-bar ul li:hover{
+    border-bottom:#FFFFFF solid 5px;
+      
+}
+.nav-bar ul{
+   margin: 0 auto;
+   height:100px;
+   display:block;
+}
+.nav-bar ul li:first-child{
+    margin-left:-3em;
+    width:150px;
+    height:76.5px;
+    text-align:center;
+    
+}
+.nav-bar ul li{
+    list-style:none;
+    float:left;
+    height:76.5px;
+    margin-right:0;
+    width:150px;
+      text-align:center;
+    vertical-align:middle;  
+}
+
+.main{
+    margin-top:2.5em;
+    padding: 0em 1em 1em 1em;
+    border: solid 5px orange;
+    box-shadow: 10px 10px 5px #888888;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 10px;
+    background-color: white;
+    opacity:.9;
+     
+}
+.main p{
+    text-align:justify;
+}
+
+.main h5{
+    margin-bottom:auto;
+    border-bottom:solid 1px orange;
+    width:50px;
+}
+.intro-img{
+    float:right;
+    padding:1em 1em 1em 1em;
+}
+.main ul{
+    margin-top:.2em;
+    list-style-type:lower-greek;
+}
+.main-aside {
+    margin-top:2.5em;
+    padding: 0em 1em 1em 1em;
+    border: solid 5px orange;
+    box-shadow: 10px 10px 5px #888888;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 10px;
+    background-color: white;
+    height:275px;
+}
+.main-aside aside{
+    display:block;
+    float:left;
+    width:200px;
+    clear:right;
+}
+
+.img-style{
+    width:450px;
+    height:250px;
+    margin-top:-15px;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;   
+}
+
+.produce{
+    width:100%;
+    text-align:center;
+}
+
+.produce tr:first-child th:first-child {
+    width:100%;
+}
+
+.produce tr th, tr td{
+    width:25%;
+}
+
+.produce tr:nth-child(even){
+    background:#FFA500;
+}
+
+.footer p{
+    margin-top:2em;
+    text-align:right;
+    font-weight:bold;
+}
+
+.main-form{
+     margin-top:2.5em;
+    padding: 0em 1em 1em 1em;
+    border: solid 5px orange;
+    box-shadow: 10px 10px 5px #888888;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 10px;
+    background-color: white;
+    height:auto;
+}
+.main-form fieldset{
+    height:300px;
+    margin-bottom:1em;
+    display:block;
+    border:dashed 1px;
+}
+.main-form fieldset legend{
+    font-weight:bold;
+    border-bottom:1px solid;
+}
+.main-form fieldset label{
+    margin-right:2em;
+    width:100px;
+    display:block;
+}
+.main-form fieldset input{
+    border: #FFA500 5px solid;
+    margin-right:1em;
+    display:inline;
+}
+.btn-style {
+    margin-top:1em;
+    background:#FFA500;
+    color:black;
+    border:none;
+    height:25px;
+    width:75px;
+}
+.maing-form textarea{
+    width:700px;
+}
+

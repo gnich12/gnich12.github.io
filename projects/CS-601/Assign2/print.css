@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Cuprum', sans-serif,arial,times;
+    font-size:14px;
+    color:#000000;
+}
+.container-header{
+    margin-bottom:0;
+}
+
+.container{
+    width:90%;
+    margin: 0 auto;
+    padding:0;    
+}
+
+.header{
+    padding:0;
+    text-align: center;
+}
+.img-style{
+    width:450px;
+    height:250px;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+
+.footer{
+    text-align:right;
+}
+
+.main{
+    margin-top:2.5em;
+    padding: 0em 1em 1em 1em;
+    border: solid 5px black;
+    background-color: white;
+}
+.main p{
+    text-align:justify;
+}
+
+.main h5{
+    margin-bottom:auto;
+    border-bottom:solid 1px black;
+    width:50px;
+}
+.main ul{
+    margin-top:.2em;
+}
+
+.container-bdy{   
+    display:block;
+    margin-top:-1em;
+    height:auto;
+}

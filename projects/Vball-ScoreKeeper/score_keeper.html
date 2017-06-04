@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Volleyball Score Keeper</title>
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/sheet_style.css">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="score_keeper">
+    <div data-role="header">
+        <h1>Vball Score Sheet</h1>
+
+        <div data-role="navbar">
+
+            <ul>
+                <li>
+                    <button type="button"> New Game</button>
+                </li>
+                <li>
+                    <button type="button" class="next_set">Next Set</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div role="main" class="ui-content">
+
+            <table data-role="table" data-mode="column" class="table-stroke ui-responsive">
+                <thead>
+                <tr><th>Sets</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr id="row-a">
+                    <td id="team_name_a">Team A</td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr id="row-b">
+                    <td id="team_name_b">Team B</td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                </tbody>
+            </table>
+
+        <div class="ui-grid-a ui-responsive">
+            <div class="ui-block-a">
+                <div class="ui-bar ui-responsive" >
+
+                    <div class="left"><input type="text" name="team_a" placeholder="Enter Team A Name" id="team-a" class="ui-mini ui-input-search"></div>
+                    <div class="right" id="save-block-a"><a href="#" data-rel="close" id="save_team_name_a"
+                                               class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-check ui-btn-icon-right ui-btn-inline ui-mini">Save</a></div>
+                </div>
+
+
+                <div class="score_a">
+                    <div id="box-a" class="ui-corner-all">
+                        <span>0</span>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+            <div class="ui-block-b">
+                <div class="ui-bar ui-responsive">
+
+                    <div class="left"><input type="text" name="team_b" placeholder="Enter Team B Name" id="team-b" class="ui-mini ui-input-search"></div>
+                    <div class="right" id="save-block-b"><a href="#" data-rel="close" id="save_team_name_b"
+                                          class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-check ui-btn-icon-right ui-btn-inline ui-mini">Save</a></div>
+                </div>
+
+
+
+                <div class="score_b">
+                    <div id="box-b" class="ui-corner-all">
+                        <span id="">0</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- /grid-a -->
+        <div data-role="panel" id="leftpanel1" data-position="left" data-display="overlay" data-theme="a">
+
+
+            <h3 class="ui-bar">Edit Team Score</h3>
+
+            <div class="ui-body">
+                <h4>Team A</h4>
+                <input type="number" id="new_score_a" value="">
+                <h4>Team B</h4>
+                <input type="number" id="new_score_b" value="">
+
+            </div>
+
+
+            <a href="#" data-rel="close" id="save_score"
+               class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-check ui-btn-icon-right ui-btn-inline">Save</a>
+
+        </div>
+        <!-- /leftpanel1 -->
+
+        <div class="ui-grid-solo ui-responsive">
+            <div class="ui-block-a">
+                <button class="ui-btn ui-corner-all ui-shadow" type="button" data-theme="a" id="replay_point">Replay
+                    Point
+                </button>
+            </div>
+
+        </div>
+        <div class="ui-grid-solo ui-responsive">
+            <div class="ui-block-a"><a href="#leftpanel1" class="ui-btn ui-shadow ui-corner-all">Edit Team Score</a>
+            </div>
+        </div>
+
+    </div>
+    <div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <button type="button"> New Game</button>
+                </li>
+                <li>
+                    <button type="button" class="next_set">Next Set</button>
+                </li>
+            </ul>
+        </div>
+        <h4>Alvaro Ching</h4>
+
+    </div>
+</div>
+<script src="js/score_sheet.js"></script>
+</body>
+
+
+</html>

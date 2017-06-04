@@ -1,0 +1,52 @@
+.score_a div{
+    border:solid 1px black;
+    height: 100px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top:2em;
+
+}
+
+.score_a  span{
+    height: 40px;
+    font-size: 40pt;
+}
+
+
+.score_b div{
+    border:solid 1px black;
+    height: 100px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top:2em;
+    margin-bottom: 1em;
+}
+
+.score_b  span{
+    height: 405px;
+    font-size: 40pt;
+}
+
+.left {
+    float: left;
+    width: 65%;
+    margin-right: 2%;
+}
+.right {
+    float: right;
+    width: 30%;
+}
+.ui-input-search {
+    margin: 0;
+
+}
+button.ui-btn {
+    margin: 0;
+}
+
+.win{
+    background: orange;
+    color:white;
+}

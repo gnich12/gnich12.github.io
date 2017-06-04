@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <meta charset="utf-8">
+          <title>Assignment 3 - Contact</title>
+           <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen"/>
+           <!--<link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>-->
+    </head>
+    <body>
+        <div class="container-header">
+            <header class="container">
+            <div class="main-header">
+                <h1>Contact me</h1>
+                <h4>Assignment 3</h4>
+            </div>
+        </header>
+        </div>
+         <div class="containter-nav">
+            <nav class="container nav-bar">
+            <ul>
+                  <li ><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Biography</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+           
+        </nav>
+        </div>
+        <div class="container main-form" >
+            <h1>Contact Form</h1>
+            <form action="http://bucs601.com/submit.php" method="post" >
+                <fieldset><legend>Student Info</legend>
+                    <label>First Name</label><input type="text" name="firstName" id="firstName" />
+            <label>Last Name</label><input type="text" name="lastName" id="lastName" />
+            <label>Facilitator</label><input type="text" name="facilitator" id="facilitator" />
+                </fieldset>
+            
+            <fieldset>
+                <legend>Programming Language</legend>
+                <input type="radio" name="webdev" value="html 5"><label>Html 5</label>
+                <input type="radio" name="webdev" value="css 3"><label>CSS 3</label>
+                <input type="radio" name="webdev" value="Javascript"><label>Javascript</label>
+                <input type="radio" name="webdev" value="Xml"><label>XML</label>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Course and grade</legend>
+                <input type="checkbox" name="course" value="cs 601"><label>CS 601</label>
+                <input type="checkbox" name="course" value="cs 520"><label>CS 520</label>
+                <label>Choose a Grade</label>
+                <select name="grades">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </fieldset>
+            
+            <label>Message for your facilitator</label><br>
+            <textarea cols="50" rows="15">&nbsp;</textarea><br>
+            <input type="submit" class="btn-style" value="Submit">
+        </form>
+        </div>
+        
+        <footer class="container footer">
+            <p>Assignment 3 - Alvaro Ching</p>
+        </footer>
+        
+    </body>
+</html>

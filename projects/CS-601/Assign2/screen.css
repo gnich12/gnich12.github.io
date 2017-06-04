@@ -1,0 +1,78 @@
+
+body{
+	margin:0;
+	font-family: 'Cuprum', sans-serif;
+	font-size:12.5pt;
+	background:url(image_bg.png);
+}
+.container-header{
+    background:url(Black_texture_04-22.jpg) fixed center no-repeat #000000;
+    display:block;
+    margin-bottom:0;
+    box-shadow: 0px 0px 15px black;
+
+}
+.container{
+    width:960px;
+    margin: 0 auto;
+    display:block;
+    
+}
+
+.header{
+    padding:.5em;
+    text-align: center;
+    color:#ffffff;
+}
+
+
+.header h1{
+    text-shadow:2px 2px gray;
+}
+
+.main{
+    margin-top:2.5em;
+    padding: 0em 1em 1em 1em;
+    border: solid 5px orange;
+    box-shadow: 10px 10px 5px #888888;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 10px;
+    background-color: white;
+    
+}
+.main p{
+    text-align:justify;
+}
+
+.main h5{
+    margin-bottom:auto;
+    border-bottom:solid 1px orange;
+    width:50px;
+}
+.main ul{
+    margin-top:.2em;
+    list-style-type:lower-greek;
+}
+
+.container-bdy{   
+    display:block;
+    background-color:transparent;
+    margin-top:-1em;
+    height:auto;
+}
+.img-style{
+    width:450px;
+    height:250px;
+    margin-top:-15px;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    
+}
+
+.container-footer{
+  margin:auto;
+}
+.footer{
+    text-align:right;
+}

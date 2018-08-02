@@ -1,0 +1,11 @@
+---
+label: blog
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: title
+  name: title
+- type: textarea
+  name: content
+  label: Content

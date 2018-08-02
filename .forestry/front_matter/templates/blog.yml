@@ -1,13 +1,17 @@
 ---
-label: blog
+label: Blog
 hide_body: false
 is_partial: false
 fields:
 - type: text
-  label: title
-  name: title
+  label: Layout
+  name: Post
 - type: textarea
   name: content
-  label: Content
+  label: Title
+- type: include
+- type: datetime
+  label: Date
+  name: date
 pages:
 - _posts/testing.md

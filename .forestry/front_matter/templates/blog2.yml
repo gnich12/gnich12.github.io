@@ -14,5 +14,3 @@ fields:
 - type: datetime
   label: Date
   name: date
-pages:
-- _posts/second-blog.md

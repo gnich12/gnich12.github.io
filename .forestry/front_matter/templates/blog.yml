@@ -9,3 +9,5 @@ fields:
 - type: textarea
   name: content
   label: Content
+pages:
+- _posts/testing.md
